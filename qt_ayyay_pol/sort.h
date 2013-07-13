@@ -10,14 +10,14 @@ private:
     int n;
 public:
     //Need only default constructor without parameters.
-    sort(int *array);
+    sort();
     //Need virtual function for sorting.
     //Destructor should be virtual too !!!
     ~sort();
 };
 //It's dosn't need
 //-----------------------------------
-sort::sort(int *array) {
+sort::sort() {
     cout<<"\nstarted sorting\n";
 }
 
