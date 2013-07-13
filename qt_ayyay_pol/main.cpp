@@ -3,11 +3,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 using namespace std;
 
 int main() {
 
-    cout<<"hi"<<endl;
+    const int size = 500;
+
+    cout<<"hi\n";
+
+    int *array;
+    array = new int[size];
+
+    for(int i=0;i<=500;i++) {
+        array[i] = i+10;
+    }
+
+    cout<<array[55];
 
     return 0;
 }
