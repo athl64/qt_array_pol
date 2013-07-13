@@ -19,7 +19,10 @@ int main() {
         array[i] = i+10;
     }
 
-    cout<<array[55];
+    for(int i=0;i<=size;i++) cout<<array[i];
+
+    delete[] array;
+    cout<<"\nmemory cleared succesfuly";
 
     return 0;
 }
