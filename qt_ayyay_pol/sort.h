@@ -2,6 +2,7 @@
 #define SORT_H
 #include "conio.h"
 #include "iostream"
+#include <cstdlib>
 
 using namespace std;
 
@@ -9,14 +10,11 @@ class sort {
 private:
     int n;
 public:
-    //Need only default constructor without parameters.
     sort();
-    //Need virtual function for sorting.
-    //Destructor should be virtual too !!!
     ~sort();
+    int sort_array(int *arr);
 };
-//It's dosn't need
-//-----------------------------------
+
 sort::sort() {
     cout<<"\nstarted sorting\n";
 }
@@ -24,5 +22,5 @@ sort::sort() {
 sort::~sort() {
     cout<<"\n destroyed\n";
 }
-//-----------------------------------
+
 #endif // SORT_H

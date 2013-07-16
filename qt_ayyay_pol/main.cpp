@@ -14,10 +14,12 @@ int main() {
     cout<<"hi\n";
 
     int *array;
+    int random_int;
     array = new int[size];
 
     for(int i=0;i<=500;i++) {
-        array[i] = i+10;
+        //array[i] = i+10;
+        array[i] = rand() %100;
     }
 
     for(int i=0;i<=size;i++) cout<<array[i];
