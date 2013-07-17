@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
+#include "bubble.h"
 
 
 using namespace std;
@@ -18,14 +19,22 @@ int main() {
     array = new int[size];
 
     for(int i=0;i<=500;i++) {
-        //array[i] = i+10;
         array[i] = rand() %100;
     }
 
-    for(int i=0;i<=size;i++) cout<<array[i];
+    for(int i=0;i<=size;i++) cout<<array[i]<<" ";//fill array with random numbers
+
+    cout<<"\nspace between output\n";
+
+    // using of class bubble
 
     delete[] array;
     cout<<"\nmemory cleared succesfuly";
 
+    return 0;
+}
+
+int bubble::bubble_method(int *arr, int size_arr) {
+    //return sort::sort_array(arr,size_arr);
     return 0;
 }

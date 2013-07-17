@@ -3,4 +3,5 @@ SOURCES += \
 CONFIG +=console
 
 HEADERS += \
-    sort.h
+    sort.h \
+    bubble.h
