@@ -6,7 +6,7 @@ private:
     int n;
 public:
     sort();
-    ~sort();
+    virtual ~sort();
     int sort_array(int *arr, int size_arr);
 };
 
