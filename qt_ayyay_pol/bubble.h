@@ -5,7 +5,7 @@ class bubble {
 public:
     bubble();
     ~bubble();
-    int bubble_method(int *arr, int size_arr);
+    int sort_array(int *arr, int size_arr);
 };
 
 #endif // BUBBLE_H

@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "sort.h"
 #include "bubble.h"
+#include "sort.cpp"
+#include "bubble.cpp"
 
 
 using namespace std;
@@ -35,31 +37,4 @@ int main() {
     cout<<"\nmemory cleared succesfuly";
 
     return 0;
-}
-
-int bubble::bubble_method(int *arr, int size_arr) {
-    //return sort::sort_array(&arr,size_arr);//         <-this shit doesn't work
-    return 0;
-}
-
-int sort::sort_array(int *arr, int size_arr) {//simple sort method
-    int temp,n,m;
-    for(n=0;n<=size_arr;n++) {
-        for(m=0;m<size_arr;m++) {
-            if(arr[m]>arr[m+1]) {
-                temp=arr[m+1];
-                arr[m+1]=arr[m];
-                arr[m]=temp;
-            }
-        }
-    }
-    return 0;
-}
-
-sort::sort() {
-
-}
-
-sort::~sort() {
-
 }

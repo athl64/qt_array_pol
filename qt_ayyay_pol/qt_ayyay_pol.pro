@@ -1,5 +1,7 @@
 SOURCES += \
-    main.cpp
+    main.cpp \
+    sort.cpp \
+    bubble.cpp
 CONFIG +=console
 
 HEADERS += \
