@@ -1,12 +1,9 @@
-#include <conio.h>
+//#include <conio.h>
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
 #include "bubble.h"
-#include "sort.cpp"
-#include "bubble.cpp"
-
 
 using namespace std;
 
@@ -28,12 +25,13 @@ int main() {
     cout<<"\nspace between output\n";
 
     // using of class bubble
-    sort g;
-    g.sort_array(array,size);
+    ISort *g = new bubble();
+    g->sort_array(array,size);
     // using of class bubble
     for(int i=0;i<=size;i++) cout<<array[i]<<" ";
 
     delete[] array;
+    delete g;
     cout<<"\nmemory cleared succesfuly";
 
     return 0;

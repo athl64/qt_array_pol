@@ -1,13 +1,13 @@
 #ifndef SORT_H
 #define SORT_H
 
-class sort {
+class ISort {
 private:
     int n;
 public:
-    sort();
-    virtual ~sort();
-    int sort_array(int *arr, int size_arr);
+    ISort();
+    virtual ~ISort();
+    virtual int sort_array(int *arr, int size_arr) = 0;
 };
 
 

@@ -1,6 +1,6 @@
+
 SOURCES += \
     main.cpp \
-    sort.cpp \
     bubble.cpp
 CONFIG +=console
 
